@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347b0059aa18463f9204d8cf37dee377, type: 3}
+  m_Name: QuestSystemData
+  m_EditorClassIdentifier: 
+  QuestSystemData:
+    Items:
+    - Type: 1
+      Items:
+      - TargetCount: 25
+        QuestSystemAward:
+          Type: 7
+          Value: 0
+          DurationMinute: 15
+      - TargetCount: 50
+        QuestSystemAward:
+          Type: 4
+          Value: 0
+          DurationMinute: 15
+      - TargetCount: 50
+        QuestSystemAward:
+          Type: 5
+          Value: 0
+          DurationMinute: 15
+      - TargetCount: 100
+        QuestSystemAward:
+          Type: 1
+          Value: 500
+          DurationMinute: 0
+      - TargetCount: 50
+        QuestSystemAward:
+          Type: 6
+          Value: 0
+          DurationMinute: 15
+      - TargetCount: 150
+        QuestSystemAward:
+          Type: 7
+          Value: 0
+          DurationMinute: 30
+      - TargetCount: 250
+        QuestSystemAward:
+          Type: 2
+          Value: 3
+          DurationMinute: 0
+      - TargetCount: 400
+        QuestSystemAward:
+          Type: 1
+          Value: 1500
+          DurationMinute: 0
+      - TargetCount: 100
+        QuestSystemAward:
+          Type: 7
+          Value: 0
+          DurationMinute: 30
+      - TargetCount: 200
+        QuestSystemAward:
+          Type: 5
+          Value: 0
+          DurationMinute: 30
+      - TargetCount: 150
+        QuestSystemAward:
+          Type: 4
+          Value: 0
+          DurationMinute: 30
+      - TargetCount: 200
+        QuestSystemAward:
+          Type: 6
+          Value: 0
+          DurationMinute: 60
+      - TargetCount: 250
+        QuestSystemAward:
+          Type: 3
+          Value: 3
+          DurationMinute: 0
+      - TargetCount: 250
+        QuestSystemAward:
+          Type: 7
+          Value: 0
+          DurationMinute: 60
+      - TargetCount: 300
+        QuestSystemAward:
+          Type: 9
+          Value: 3
+          DurationMinute: 0
+      - TargetCount: 400
+        QuestSystemAward:
+          Type: 8
+          Value: 3
+          DurationMinute: 0
+      - TargetCount: 300
+        QuestSystemAward:
+          Type: 4
+          Value: 0
+          DurationMinute: 30
+      - TargetCount: 400
+        QuestSystemAward:
+          Type: 5
+          Value: 0
+          DurationMinute: 30
+      - TargetCount: 600
+        QuestSystemAward:
+          Type: 7
+          Value: 0
+          DurationMinute: 120
+      - TargetCount: 1000
+        QuestSystemAward:
+          Type: 1
+          Value: 5000
+          DurationMinute: 0
+      DurationHour: 0.5
