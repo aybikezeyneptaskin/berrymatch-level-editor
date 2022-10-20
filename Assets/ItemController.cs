@@ -21,6 +21,7 @@ public class ItemController : MonoBehaviour
     {
         if (quantity > 0)
         {
+            //Debug.Log("here");
             Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y); 
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
             Instantiate(_editor.ItemImage[ID], new Vector3(worldPosition.x, worldPosition.y, 0), Quaternion.identity);
@@ -28,7 +29,6 @@ public class ItemController : MonoBehaviour
             quantity--;
             quantityText.text = quantity.ToString();
             _editor.CurrentButtonPressed = ID;
-
         }
     }
 }

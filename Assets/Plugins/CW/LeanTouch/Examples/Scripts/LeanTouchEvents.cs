@@ -58,10 +58,10 @@ namespace Lean.Touch
 		public void HandleGesture(List<LeanFinger> fingers)
 		{
 			Debug.Log("Gesture with " + fingers.Count + " finger(s)");
-			Debug.Log("    pinch scale: " + LeanGesture.GetPinchScale(fingers));
-			Debug.Log("    twist degrees: " + LeanGesture.GetTwistDegrees(fingers));
-			Debug.Log("    twist radians: " + LeanGesture.GetTwistRadians(fingers));
-			Debug.Log("    screen delta: " + LeanGesture.GetScreenDelta(fingers));
+			//Debug.Log("    pinch scale: " + LeanGesture.GetPinchScale(fingers));
+			//Debug.Log("    twist degrees: " + LeanGesture.GetTwistDegrees(fingers));
+			//Debug.Log("    twist radians: " + LeanGesture.GetTwistRadians(fingers));
+			//Debug.Log("    screen delta: " + LeanGesture.GetScreenDelta(fingers));
 		}
 	}
 }

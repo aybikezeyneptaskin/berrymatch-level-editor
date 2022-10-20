@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.Events;
 using Lean.Common;
 using CW.Common;
@@ -10,6 +12,9 @@ namespace Lean.Touch
 	[AddComponentMenu(LeanTouch.ComponentPathPrefix + "Finger Tap")]
 	public class LeanFingerTap : MonoBehaviour
 	{
+		//public int ID;
+		//private LevelEditorManager _editor;
+		
 		[System.Serializable] public class LeanFingerEvent : UnityEvent<LeanFinger> {}
 		[System.Serializable] public class Vector3Event : UnityEvent<Vector3> {}
 		[System.Serializable] public class Vector2Event : UnityEvent<Vector2> {}
@@ -90,6 +95,16 @@ namespace Lean.Touch
 
 			if (requiredTapCount > 0 && finger.TapCount != requiredTapCount)
 			{
+				return;
+			}
+			
+			//AYBİKE: I ADDED THIS PART:
+			if (requiredTapCount > 0 && finger.TapCount == requiredTapCount)
+			{
+				Debug.Log("destroy");
+				Destroy(GameObject.FindGameObjectWithTag("ItemImage"));
+				//_editor.ItemButtons[ID].quantity++;
+				//_editor.ItemButtons[ID].quantityText.text = _editor.ItemButtons[ID].quantity.ToString();
 				return;
 			}
 

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lean.Touch;
+using CW.Common;
 
 public class BerryItem : MonoBehaviour
 {
@@ -16,9 +18,11 @@ public class BerryItem : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             Debug.Log("destroying..");
+            //DestroyNow();
             Destroy(this.gameObject);
             _editor.ItemButtons[ID].quantity++;
             _editor.ItemButtons[ID].quantityText.text = _editor.ItemButtons[ID].quantity.ToString();
         }
     }
+   
 }

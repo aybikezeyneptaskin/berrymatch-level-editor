@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Touch;
 using UnityEditor;
 using UnityEngine;
+
 
 public class LevelEditorManager : MonoBehaviour
 {
@@ -25,5 +28,7 @@ public class LevelEditorManager : MonoBehaviour
                 Quaternion.identity);
             Destroy(GameObject.FindGameObjectWithTag("ItemImage"));
         }
+        
     }
+    
 }
