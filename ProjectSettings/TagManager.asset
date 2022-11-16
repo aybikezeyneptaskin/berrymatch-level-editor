@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LevelEditorManager
   - ItemImage
+  - Moving
   layers:
   - Default
   - TransparentFX

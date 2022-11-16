@@ -99,14 +99,14 @@ namespace Lean.Touch
 			}
 			
 			//AYBİKE: I ADDED THIS PART:
-			if (requiredTapCount > 0 && finger.TapCount == requiredTapCount)
+			/*if (requiredTapCount > 0 && finger.TapCount == requiredTapCount)
 			{
 				Debug.Log("destroy");
 				Destroy(GameObject.FindGameObjectWithTag("ItemImage"));
 				//_editor.ItemButtons[ID].quantity++;
 				//_editor.ItemButtons[ID].quantityText.text = _editor.ItemButtons[ID].quantity.ToString();
 				return;
-			}
+			}*/
 
 			if (requiredTapInterval > 0 && (finger.TapCount % requiredTapInterval) != 0)
 			{
